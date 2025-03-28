@@ -25,7 +25,7 @@ if menu == "Overall":
     st.write("This is an overview of the project.")
 
     # Display an image from images folder
-    overall_img_path = os.path.join(image_dir, "logo.png")
+    overall_img_path = os.path.join(image_dir, "word_cloud.png")
     if os.path.exists(overall_img_path):
         st.image(overall_img_path, caption="Project Overview", use_column_width=True)
     else:
