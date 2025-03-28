@@ -38,32 +38,12 @@ if menu == "Overall":
         'first column': [1, 2, 3, 4],
         'second column': [10, 20, 30, 40]
     }))
-    
-    # Example Plot
-    x = range(10)
-    y = [i**2 for i in x]
 
-    fig, ax = plt.subplots()
-    ax.plot(x, y)
-    ax.set_title("Sample Plot")
-
-    # Save and show the plot
-    plot_path = os.path.join(plot_dir, "sample_plot.png")
-    fig.savefig(plot_path)
-    st.pyplot(fig)
 
 # Introduction Section
 elif menu == "Introduction":
     st.title("Introduction")
     st.write("Project background and objectives.")
-
-    # Upload an image (stored in images/)
-    uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
-    if uploaded_file:
-        with open(os.path.join(image_dir, uploaded_file.name), "wb") as f:
-            f.write(uploaded_file.getbuffer())
-        st.success("Image saved!")
-        st.image(uploaded_file, use_column_width=True)
 
 # Methodology Section
 elif menu == "Methodology":
@@ -94,10 +74,6 @@ elif menu == "Results":
 elif menu == "Recommendations":
     st.title("Recommendations")
     st.write("Provide insights and future recommendations.")
-
-    user_recommendation = st.text_area("Write your recommendation...")
-    if st.button("Submit Recommendation"):
-        st.success("Recommendation submitted!")
 
 
 # test Section
