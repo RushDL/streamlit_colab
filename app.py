@@ -31,6 +31,14 @@ if menu == "Overall":
     else:
         st.warning("No overview image found. Please add an image to `images/` directory.")
 
+    # Test here on displaying a table
+
+    st.write("Here's our first attempt at using data to create a table:")
+    st.write(pd.DataFrame({
+        'first column': [1, 2, 3, 4],
+        'second column': [10, 20, 30, 40]
+    }))
+    
     # Example Plot
     x = range(10)
     y = [i**2 for i in x]
