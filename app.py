@@ -8,7 +8,7 @@ st.set_page_config(page_title="My Streamlit App", layout="wide")
 
 # Sidebar Navigation
 st.sidebar.title("Navigation")
-menu = st.sidebar.radio("Go to", ["Overall", "Introduction", "Methodology", "Results", "Recommendations"])
+menu = st.sidebar.radio("Go to", ["Overall", "Introduction", "Methodology", "Results", "Recommendations", "test"])
 
 # Ensure directories exist
 data_dir = "data"
