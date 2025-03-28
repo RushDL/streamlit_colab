@@ -91,5 +91,18 @@ elif menu == "Recommendations":
     if st.button("Submit Recommendation"):
         st.success("Recommendation submitted!")
 
+
+# test Section
+elif menu == "test":
+    st.title("test")
+    st.write("This is a test")
+
+    st.markdown("""
+    - **Step 1**: Data Collection
+    - **Step 2**: Data Cleaning
+    - **Step 3**: Model Training
+    - **Step 4**: Evaluation
+    """)
+
 # Footer
 st.sidebar.write("Developed using Streamlit")
